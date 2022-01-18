@@ -1,0 +1,46 @@
+
+
+<div class="container">
+  <img class="img-fondo" src="../assets/green-pink-and-gray-paper-circles-frame-fro-text-on-purple-backdrop.jpg" alt="">
+  <img class="img1" src="../assets/thumbnail_Odontopediatría logo-02.png" alt="">
+  <img class="blob" src="../assets/blob-scatter-haikei.svg" alt="">
+
+  <div class="div1">
+    <img class="img2" src="../assets/thumbnail_Odontopediatría logo-03.png" alt="">
+  </div>
+
+  <div class="div2">
+    <h1>sistema de citas en linea</h1>
+    <hr>
+    <!-- tipo de cita -->
+    <form #miFormulario="ngForm">
+      <div>
+        <label for="cita">Tipo de Cita</label>
+        <select name="cita" id="cita">
+          <option disabled selected >selecciona una opción</option>
+          <option value="primera">primera vez</option>
+          <option value="subsecuente">cita subsecuente</option>
+        </select>
+
+      </div>
+      <!-- cita de seguimiento -->
+      <div>
+        <label for="tiempo">Tratamiento a realizar</label>
+        <select name="tiempo" id="tiempo">
+          <option disabled selected >selecciona una opción</option>
+          <option value="30min">citas de media hora</option>
+          <option value="60min">citas de una hora</option>
+          <option value="90min">citas de hora y media</option>
+          <option value="120min">citas de dos horas</option>
+        </select>
+      </div>
+      <!-- boton de submit -->
+      <button type="submit"
+      >Siguiente
+    </button>
+    </form>
+
+  </div>
+
+
+</div>
