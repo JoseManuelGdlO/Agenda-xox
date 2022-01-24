@@ -8,6 +8,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 
 import { HomePage } from './home.page';
 import { NgCalendarModule } from 'ionic2-calendar';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { NgCalendarModule } from 'ionic2-calendar';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    NgCalendarModule
+    NgCalendarModule,
+    ComponentsModule
   ],
   declarations: [HomePage]
 })
