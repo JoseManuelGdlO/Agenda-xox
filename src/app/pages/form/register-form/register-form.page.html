@@ -13,32 +13,24 @@
     <h1>sistema de citas en linea</h1>
     <hr>
     <!-- tipo de cita -->
-    <form #miFormulario="ngForm">
       <div>
         <label for="cita">Tipo de Cita</label>
         <select name="cita" id="cita">
           <option disabled selected >selecciona una opción</option>
-          <option value="primera">primera vez</option>
-          <option value="subsecuente">cita subsecuente</option>
+          <option *ngFor="let item of treats.data" [value]="item.id">{{item.description}}</option>
         </select>
 
       </div>
       <!-- cita de seguimiento -->
       <div>
         <label for="tiempo">Tratamiento a realizar</label>
-        <select name="tiempo" id="tiempo">
+        <select  name="tiempo" id="tiempo">
           <option disabled selected >selecciona una opción</option>
-          <option value="30min">citas de media hora</option>
-          <option value="60min">citas de una hora</option>
-          <option value="90min">citas de hora y media</option>
-          <option value="120min">citas de dos horas</option>
+          <option *ngFor="let item of treats.data" [value]="item.id">{{item.description}}</option>
         </select>
       </div>
-      <!-- boton de submit -->
-      <button type="submit"
-      >Siguiente
-    </button>
-    </form>
+
+      <button> Siguiente </button>
 
   </div>
 

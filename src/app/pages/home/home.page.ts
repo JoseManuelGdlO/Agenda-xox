@@ -34,7 +34,7 @@ export class HomePage implements OnInit {
   constructor(
     public navCtrl: NavController,
     private modalCtrl: ModalController,
-    private alertCtrl: AlertController
+    private alertCtrl: AlertController,
     ) { }
 
 
