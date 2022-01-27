@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      {{ viewTitle }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <calendar [eventSource]="eventSource"
+  [showEventDetail]="false"
+  [calendarMode]="calendar.mode"
+  [currentDate]="calendar.currentDate"
+  (onEventSelected)="onEventSelected($event)"
+  (onTitleChanged)="onViewTitleChanged($event)"
+  (onTimeSelected)="onTimeSelected($event)" 
+  step="30"
+  class="calendar">
+</calendar>
+<div class="divTestCard">
+  <div *ngFor="let item of dummyObject">
+    <moovi-cards [name]="item.name"
+    [lastName]="item.lastName"
+    [secondLastName]="item.secondLastName"
+    [patient]="item.patient"
+    [age]="item.age"
+    [duration]="item.duration"
+    [firstTime]="item.firstTime"
+    [haveExtras]="item.haveExtras"
+    [duration]="item.hoursNeed"
+    [hourDate]="item.hourDate"
+    [isAvaliable]="item.isAvaliable"
+    [hidden]="item.hidden"
+    ></moovi-cards>
+  </div>
+</div>
+
+</ion-content>

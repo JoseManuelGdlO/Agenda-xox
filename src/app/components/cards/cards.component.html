@@ -1,0 +1,108 @@
+<div *ngIf="!isAvaliable && !hidden">
+  <div>
+    <h2 class="h2___hourLine">{{hourDate}}</h2>
+    <div class="div___line"></div>
+  </div>
+  <div class="pad___cardPrincipal">
+    <div
+      [ngClass]="{ 'gradient0': true}"
+      class="div___cardPrincipal">
+      <ion-grid class="no-padding no-margin">
+        <ion-row class="no-padding no-margin">
+          <ion-col size="2" class="col___badga no-padding no-margin center">
+            <div class="div___Badga">
+              {{initials}}
+            </div>
+          </ion-col>
+          <ion-col class="no-padding no-margin center">
+            <ion-row class="no-padding no-margin">
+              <ion-col class="col___titles no-padding no-margin tx___left">
+                <h5 class="h5___titleCard">{{name}} {{lastName}} {{secondLastName}}</h5>
+                <h6 class="h6___subtitleCard"> Paciente: {{patient}}</h6>
+              </ion-col>
+              <ion-col size="3" class="col___time no-padding no-margin center">
+                <div class="div___wave"></div>
+                <h6 class="h6___timeDuration">Duracion</h6>
+                <h2 class="h2___time">{{duration}}</h2>
+                <h6 class="h6___timeHours">Horas</h6>
+              </ion-col>
+            </ion-row>
+            <ion-row class="row___extras no-padding no-margin">
+              <ion-col class="no-padding no-margin center">
+                <ion-icon *ngIf="firstTime" class="color___white" name="checkmark-circle"></ion-icon>
+                <ion-icon *ngIf="!firstTime" class="color___white" name="close-circle"></ion-icon>
+                <h4 class="h4___labelExtras">Primera cita</h4>
+              </ion-col>
+              <ion-col class="no-padding no-margin center">
+                <h4 class="h4___titleExtras">{{age}}</h4>
+                <h4 class="h4___labelExtras">Edad</h4>
+              </ion-col>
+              <ion-col class="no-padding no-margin center">
+                <ion-icon *ngIf="haveExtras" class="color___white" name="checkmark-circle"></ion-icon>
+                <ion-icon *ngIf="!haveExtras" class="color___white" name="close-circle"></ion-icon>
+                <h4 class="h4___labelExtras">Seguimiento</h4>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+    </div>
+  </div>
+</div>
+<div *ngIf="isAvaliable">
+  <div>
+    <h2 class="h2___hourLine">{{hourDate}}</h2>
+    <div class="div___line"></div>
+  </div>
+  <div class="pad___cardPrincipal">
+    <div
+      [ngClass]="{ 'gradient2': true }"
+      class="div___cardPrincipal">
+      <ion-grid class="no-padding no-margin">
+        <ion-row class="no-padding no-margin">
+          <ion-col class="no-padding no-margin center">
+            <ion-row class="no-padding no-margin">
+              <ion-col class="col___titles no-padding no-margin center">
+                <h5 class="h5___titleCard_available">Disponible</h5>
+                <h6 class="h6___subtitleCard_available"> Click aqui para seleccionar la hora!</h6>
+              </ion-col>
+            </ion-row>
+            <ion-row class="row___extras no-padding no-margin">
+             
+            </ion-row>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+    </div>
+  </div>
+</div>
+<div *ngIf="!isAvaliable && hidden">
+  <div>
+    <h2 class="h2___hourLine">{{hourDate}}</h2>
+    <div class="div___line"></div>
+  </div>
+  <div class="pad___cardPrincipal">
+    <div
+      [ngClass]="{ 'gradientHidden': true }"
+      class="div___cardPrincipal">
+      <ion-grid class="no-padding no-margin">
+        <ion-row class="no-padding no-margin">
+          <ion-col class="no-padding no-margin center">
+            <ion-row class="no-padding no-margin">
+              <ion-col class="col___titles no-padding no-margin center">
+                <h5 class="h5___titleCard_available">Ocupado</h5>
+                <h6 class="h6___subtitleCard_available"> Esta hora ya esta ocupada!</h6>
+              </ion-col>
+            </ion-row>
+            <ion-row class="row___extras no-padding no-margin">
+             
+            </ion-row>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+    </div>
+  </div>
+</div>
