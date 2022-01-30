@@ -12,25 +12,23 @@
   <div class="div2">
     <h1>sistema de citas en linea</h1>
     <hr>
-    <!-- tipo de cita -->
-      <div>
+
+      <div class="formulario" >
+
         <label for="cita">Tipo de Cita</label>
         <select name="cita" id="cita">
           <option disabled selected >selecciona una opción</option>
           <option *ngFor="let item of treats.data" [value]="item.id">{{item.description}}</option>
         </select>
 
-      </div>
-      <!-- cita de seguimiento -->
-      <div>
         <label for="tiempo">Tratamiento a realizar</label>
         <select  name="tiempo" id="tiempo">
           <option disabled selected >selecciona una opción</option>
           <option *ngFor="let item of treats.data" [value]="item.id">{{item.description}}</option>
         </select>
-      </div>
 
       <button> Siguiente </button>
+      </div>
 
   </div>
 
