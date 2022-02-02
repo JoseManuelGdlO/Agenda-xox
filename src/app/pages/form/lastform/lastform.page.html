@@ -7,16 +7,26 @@
   </div>
 
   <div class="div2">
-    <h1>Para finalizar llene los siguientes campos</h1>
+    <h1>Para finalizar llene los siguientes campos:</h1>
     <hr>
     <div class="formulario">
-      <div>
-        <label for="direction">Dirección:</label>
-        <input placeholder="" name="direction" type="text">
+      <div class="nombre">
+        <label for="nombre">Nombre del paciente:</label><br>
+        <input placeholder="primer apellido"  name="apellido1" type="text">
+        <input placeholder="segundo apellido"  name="apellido2" type="text">
+        <input placeholder="nombre(s)"  name="nombre" type="text">
       </div>
       <div>
-        <label for="age">Edad:</label>
-        <input class="age" name="age" type="number">
+        <label for="direction">Dirección:</label>
+        <input name="direction" type="text">
+      </div>
+      <div>
+        <label for="phone">Telefono:</label><br>
+        <input class="phone" name="phone" type="tel" maxlength="10" pattern="[0-9]{10}">
+      </div>
+      <div>
+        <label for="age">Fecha de Nacimiento:</label><br>
+        <input class="age" name="age" type="date">
       </div>
       <div>
         <label for="email">Email:</label>

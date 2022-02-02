@@ -49,6 +49,7 @@ button{
   border: 5px solid rgba(116, 98, 67, 0.137);
   color: white;
   font-size: 1em;
+  margin-top: .5em;
 
 }
 h1 {
@@ -58,24 +59,47 @@ h1 {
   font-size: 1.3em;
 }
 .formulario{
-  padding: 2em;
+  padding: 1em;
   border-radius: 10px;
-  width: 100%;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: rgb(118, 85, 172);
-  font-size: 20px;
+  font-size: 15px;
   border: solid 10px gold;
 
 }
 input{
-  font-size: 14px;
+  height: 1.7em;
+  border-radius: 4px;
+  color: rgb(109, 108, 108);
   width: 100%;
-  border-radius: 3px;
-  border: solid blue 1.5px;
+  font-size: 15px;
+  border: 1px solid ;
 
 }
 .age{
-  width: 37px;
+  width: 42%;
 }
+.nombre input{
+  width: 33.33%;
+}
+.phone{
+  width:50%
+}
+@media screen and (max-width: 850px){
+  .container{
+    flex-direction: column;
+  }
+}
+@media  screen and (max-width:450px) {
+  .div1{
+    width: 90%;
+  }
+  .div2{
+    bottom: 13em;
+    min-width: 400px
+  }
+  input{
+    font-size: 11px;
+  }
 
-
+}
