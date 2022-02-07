@@ -23,6 +23,5 @@ export class EventService {
 
   }
 
-  createClient(body)
 
 }

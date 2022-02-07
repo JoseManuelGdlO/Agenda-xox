@@ -12,12 +12,14 @@
   [calendarMode]="calendar.mode"
   [currentDate]="calendar.currentDate"
   (onEventSelected)="onEventSelected($event)"
-  (onTitleChanged)="onViewTitleChanged($event)"
+  (onTitleChanged)="OnViewTitleChanged($event)"
   (onTimeSelected)="onTimeSelected($event)" 
   step="30"
   class="calendar">
 </calendar>
 <div class="divTestCard">
+
+  <h2 class="center h1___dateLabel">{{stringDate}}</h2>
   <div *ngFor="let item of dummyObject">
     <moovi-cards [name]="item.name"
     [lastName]="item.lastName"
