@@ -1,9 +1,7 @@
 
 
 <div class="container">
-  <img class="img-fondo" src="../assets/green-pink-and-gray-paper-circles-frame-fro-text-on-purple-backdrop.jpg" alt="">
-  <img class="img1" src="../assets/thumbnail_Odontopediatría logo-02.png" alt="">
-  <img class="blob" src="../assets/blob-scatter-haikei.svg" alt="">
+  <img class="blob" src="../assets/stack.svg" alt="">
 
   <div class="div1">
     <img class="img2" src="../assets/thumbnail_Odontopediatría logo-03.png" alt="">
@@ -14,18 +12,21 @@
     <hr>
 
       <div class="formulario" >
+        <div>
+          <label for="cita">Tipo de Cita</label>
+          <select name="cita" id="cita">
+            <option disabled selected >selecciona una opción</option>
+            <option *ngFor="let item of treats.data" [value]="item.id">{{item.description}}</option>
+          </select>
+        </div>
 
-        <label for="cita">Tipo de Cita</label>
-        <select name="cita" id="cita">
-          <option disabled selected >selecciona una opción</option>
-          <option *ngFor="let item of treats.data" [value]="item.id">{{item.description}}</option>
-        </select>
-
+        <div>
         <label for="tiempo">Tratamiento a realizar</label>
         <select  name="tiempo" id="tiempo">
           <option disabled selected >selecciona una opción</option>
           <option *ngFor="let item of treats.data" [value]="item.id">{{item.description}}</option>
         </select>
+        </div>
 
       <button> Siguiente </button>
       </div>
