@@ -62,7 +62,7 @@ h1 {
   padding: 1em;
   border-radius: 10px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: rgb(118, 85, 172);
+  color: #502064;
   font-size: 15px;
   border: solid 10px #3FA796;
 
@@ -98,11 +98,13 @@ input{
     width: 90%;
   }
   .div2{
-    bottom: 13em;
+    bottom: 8em;
     min-width: 400px
   }
   input{
     font-size: 11px;
   }
-
+  .blob{
+    height: 170%;
+  }
 }

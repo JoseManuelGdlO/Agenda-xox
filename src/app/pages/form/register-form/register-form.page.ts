@@ -21,7 +21,7 @@ export class RegisterFormPage implements OnInit {
     patient: "534",
     phonenumber: "34"
   }
-  
+
   history = {
       description: ''
   }
